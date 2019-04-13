@@ -1,0 +1,205 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/bin/npm', 'install', '-g', 'n' ]
+2 info using npm@3.10.10
+3 info using node@v11.12.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData n
+8 silly fetchNamedPackageData n
+9 silly mapToRegistry name n
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'n',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'n',
+12 silly mapToRegistry   name: 'n',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://registry.npmjs.org/n
+14 verbose request uri http://registry.npmjs.org/n
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:35:00 AM
+17 verbose request id a5af04f995e35e95
+18 http request GET http://registry.npmjs.org/n
+19 http 500 http://registry.npmjs.org/n
+20 verbose bad json <html>
+20 verbose bad json <head>
+20 verbose bad json <title>Fastly error: unknown domain</title>
+20 verbose bad json </head>
+20 verbose bad json <body>
+20 verbose bad json Fastly error: unknown domain. Please check that this domain has been added to a service.
+20 verbose bad json </body>
+20 verbose bad json </html>
+21 error registry error parsing json
+22 verbose headers { server: 'Varnish',
+22 verbose headers   'retry-after': '0',
+22 verbose headers   'content-type': 'text/html',
+22 verbose headers   'content-length': '177',
+22 verbose headers   'accept-ranges': 'bytes',
+22 verbose headers   date: 'Tue, 09 Apr 2019 07:05:00 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   connection: 'close',
+22 verbose headers   'x-served-by': 'cache-mia17628-MIA',
+22 verbose headers   'x-cache': 'MISS',
+22 verbose headers   'x-cache-hits': '0',
+22 verbose headers   'x-timer': 'S1554793500.361883,VS0,VE0' }
+23 info retry will retry, error on last attempt: SyntaxError: Unexpected token < in JSON at position 0
+23 info retry <html>
+23 info retry <head>
+23 info retry <title>Fastly error: unknown domain</title>
+23 info retry </head>
+23 info retry <body>
+23 info retry Fastly error: unknown domain. Please check that this domain has been added to a service.
+23 info retry </body>
+23 info retry </html>
+24 info attempt registry request try #2 at 11:35:10 AM
+25 http request GET http://registry.npmjs.org/n
+26 http 500 http://registry.npmjs.org/n
+27 verbose bad json <html>
+27 verbose bad json <head>
+27 verbose bad json <title>Fastly error: unknown domain</title>
+27 verbose bad json </head>
+27 verbose bad json <body>
+27 verbose bad json Fastly error: unknown domain. Please check that this domain has been added to a service.
+27 verbose bad json </body>
+27 verbose bad json </html>
+28 error registry error parsing json
+29 verbose headers { server: 'Varnish',
+29 verbose headers   'retry-after': '0',
+29 verbose headers   'content-type': 'text/html',
+29 verbose headers   'content-length': '177',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   date: 'Tue, 09 Apr 2019 07:05:10 GMT',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   connection: 'close',
+29 verbose headers   'x-served-by': 'cache-mia17635-MIA',
+29 verbose headers   'x-cache': 'MISS',
+29 verbose headers   'x-cache-hits': '0',
+29 verbose headers   'x-timer': 'S1554793511.805366,VS0,VE0' }
+30 info retry will retry, error on last attempt: SyntaxError: Unexpected token < in JSON at position 0
+30 info retry <html>
+30 info retry <head>
+30 info retry <title>Fastly error: unknown domain</title>
+30 info retry </head>
+30 info retry <body>
+30 info retry Fastly error: unknown domain. Please check that this domain has been added to a service.
+30 info retry </body>
+30 info retry </html>
+31 info attempt registry request try #3 at 11:36:10 AM
+32 http request GET http://registry.npmjs.org/n
+33 http 500 http://registry.npmjs.org/n
+34 verbose bad json <html>
+34 verbose bad json <head>
+34 verbose bad json <title>Fastly error: unknown domain</title>
+34 verbose bad json </head>
+34 verbose bad json <body>
+34 verbose bad json Fastly error: unknown domain. Please check that this domain has been added to a service.
+34 verbose bad json </body>
+34 verbose bad json </html>
+35 error registry error parsing json
+36 verbose headers { server: 'Varnish',
+36 verbose headers   'retry-after': '0',
+36 verbose headers   'content-type': 'text/html',
+36 verbose headers   'content-length': '177',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Tue, 09 Apr 2019 07:06:11 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'close',
+36 verbose headers   'x-served-by': 'cache-mia17622-MIA',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1554793571.243359,VS0,VE0' }
+37 silly get cb [ 500,
+37 silly get   { server: 'Varnish',
+37 silly get     'retry-after': '0',
+37 silly get     'content-type': 'text/html',
+37 silly get     'content-length': '177',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Tue, 09 Apr 2019 07:06:11 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     connection: 'close',
+37 silly get     'x-served-by': 'cache-mia17622-MIA',
+37 silly get     'x-cache': 'MISS',
+37 silly get     'x-cache-hits': '0',
+37 silly get     'x-timer': 'S1554793571.243359,VS0,VE0' } ]
+38 silly fetchPackageMetaData SyntaxError: Unexpected token < in JSON at position 0
+38 silly fetchPackageMetaData <html>
+38 silly fetchPackageMetaData <head>
+38 silly fetchPackageMetaData <title>Fastly error: unknown domain</title>
+38 silly fetchPackageMetaData </head>
+38 silly fetchPackageMetaData <body>
+38 silly fetchPackageMetaData Fastly error: unknown domain. Please check that this domain has been added to a service.
+38 silly fetchPackageMetaData </body>
+38 silly fetchPackageMetaData </html>
+38 silly fetchPackageMetaData     at JSON.parse (<anonymous>)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/npm-registry-client/lib/request.js:237:23)
+38 silly fetchPackageMetaData     at Request._callback (/usr/lib/node_modules/npm/node_modules.bundled/npm-registry-client/lib/request.js:210:14)
+38 silly fetchPackageMetaData     at Request.self.callback (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:187:22)
+38 silly fetchPackageMetaData     at Request.emit (events.js:197:13)
+38 silly fetchPackageMetaData     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:1048:10)
+38 silly fetchPackageMetaData     at Request.emit (events.js:197:13)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:969:12)
+38 silly fetchPackageMetaData     at IncomingMessage.emit (events.js:202:15)
+38 silly fetchPackageMetaData     at endReadableNT (_stream_readable.js:1132:12)
+38 silly fetchPackageMetaData  error for n SyntaxError: Unexpected token < in JSON at position 0
+38 silly fetchPackageMetaData <html>
+38 silly fetchPackageMetaData <head>
+38 silly fetchPackageMetaData <title>Fastly error: unknown domain</title>
+38 silly fetchPackageMetaData </head>
+38 silly fetchPackageMetaData <body>
+38 silly fetchPackageMetaData Fastly error: unknown domain. Please check that this domain has been added to a service.
+38 silly fetchPackageMetaData </body>
+38 silly fetchPackageMetaData </html>
+38 silly fetchPackageMetaData     at JSON.parse (<anonymous>)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/npm-registry-client/lib/request.js:237:23)
+38 silly fetchPackageMetaData     at Request._callback (/usr/lib/node_modules/npm/node_modules.bundled/npm-registry-client/lib/request.js:210:14)
+38 silly fetchPackageMetaData     at Request.self.callback (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:187:22)
+38 silly fetchPackageMetaData     at Request.emit (events.js:197:13)
+38 silly fetchPackageMetaData     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:1048:10)
+38 silly fetchPackageMetaData     at Request.emit (events.js:197:13)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:969:12)
+38 silly fetchPackageMetaData     at IncomingMessage.emit (events.js:202:15)
+38 silly fetchPackageMetaData     at endReadableNT (_stream_readable.js:1132:12)
+39 silly rollbackFailedOptional Starting
+40 silly rollbackFailedOptional Finishing
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack SyntaxError: Unexpected token < in JSON at position 0
+43 verbose stack <html>
+43 verbose stack <head>
+43 verbose stack <title>Fastly error: unknown domain</title>
+43 verbose stack </head>
+43 verbose stack <body>
+43 verbose stack Fastly error: unknown domain. Please check that this domain has been added to a service.
+43 verbose stack </body>
+43 verbose stack </html>
+43 verbose stack     at JSON.parse (<anonymous>)
+43 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/npm-registry-client/lib/request.js:237:23)
+43 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules.bundled/npm-registry-client/lib/request.js:210:14)
+43 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:187:22)
+43 verbose stack     at Request.emit (events.js:197:13)
+43 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:1048:10)
+43 verbose stack     at Request.emit (events.js:197:13)
+43 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:969:12)
+43 verbose stack     at IncomingMessage.emit (events.js:202:15)
+43 verbose stack     at endReadableNT (_stream_readable.js:1132:12)
+44 verbose cwd /devops-with-docker/complex
+45 error Linux 3.10.0-957.5.1.el7.x86_64
+46 error argv "/usr/local/bin/node" "/usr/bin/npm" "install" "-g" "n"
+47 error node v11.12.0
+48 error npm  v3.10.10
+49 error Unexpected token < in JSON at position 0
+49 error <html>
+49 error <head>
+49 error <title>Fastly error: unknown domain</title>
+49 error </head>
+49 error <body>
+49 error Fastly error: unknown domain. Please check that this domain has been added to a service.
+49 error </body>
+49 error </html>
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
