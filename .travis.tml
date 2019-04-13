@@ -1,0 +1,29 @@
+sudo: required
+services:
+  - docker
+
+
+before_install:
+  - docker build -t laleh-shamkhali/react-test -f ./client/Dockerfile.dev ./client
+
+
+script:
+  - docker run laleh-shamkhali/react-test npm test -- --coverage
+
+after_success:
+  - docker build -t laleh-shamkhali/multi-client ./client
+  - docker build -t laleh-shamkhali/multi-nginx ./nginx
+  - docker build -t laleh-shamkhali/multi-server ./server
+  - docker build -t laleh-shamkhali/multi-worker ./worker
+
+# Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+
+# Take those images and push them to docker hub
+  - docker push laleh-shamkhali/multi-client
+  - docker push laleh-shamkhali/multi-nginx
+  - docker push laleh-shamkhali/multi-server
+  - docker push laleh-shamkhali/multi-worker
+
+
+  
